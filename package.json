@@ -1,0 +1,24 @@
+{
+  "name": "server-albator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "node src/setup.js",
+    "start": "node --max-old-space-size=384 src/bot.js",
+    "restore": "node src/restore.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:logs": "pm2 logs gendarmerie-bot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.28.1",
+    "dotenv": "^18.0.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
